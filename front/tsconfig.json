@@ -24,6 +24,7 @@
 		"esModuleInterop": true, // Added
 		"strictPropertyInitialization": false, // Added
 		"strictNullChecks": false, // Added
+		"noImplicitAny": false // added
 	},
 	"angularCompilerOptions": {
 		"enableI18nLegacyMessageIdFormat": false,

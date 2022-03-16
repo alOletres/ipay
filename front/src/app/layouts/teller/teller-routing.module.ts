@@ -13,6 +13,12 @@ import { TellersettingsComponent } from 'src/app/tellercomponents/tellersettings
 import { BarkotaComponent } from 'src/app/api/barkota/barkota.component';
 import { SettingsComponent } from './../../api/barkota/settings/settings.component';
 
+import { LoadcentralComponent } from "./../../api/loadcentral/loadcentral.component";
+import { LcTransComponent } from "./../../api/loadcentral/shared/components/lc-trans/lc-trans.component";
+import { LccompntTransComponent } from "./../../api/loadcentral/shared/components/lccompnt-trans/lccompnt-trans.component";
+import { LclistTransComponent } from "./../../api/loadcentral/shared/components/lclist-trans/lclist-trans.component";
+import { FilterPipe } from "./../../api/loadcentral/shared/pipe/filter.pipe";
+
 const routes: Routes = [
   {
 		path: '',
@@ -36,6 +42,9 @@ const routes: Routes = [
 			},{
 				path : 'tellerSettings',
 				component : TellersettingsComponent
+			}, {
+				path : 'loadcentralComponnt',
+				component : LcTransComponent
 			}
 		]
 	}

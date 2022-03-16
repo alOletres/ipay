@@ -43,7 +43,7 @@ import { DialogComponent } from './../../api/barkota/dialog/dialog.component';
 import { SettingsComponent } from './../../api/barkota/settings/settings.component';
 import { CotsdialogComponent } from './../../api/barkota/cotsdialog/cotsdialog.component';
 import { TellersettingsComponent } from 'src/app/tellercomponents/tellersettings/tellersettings.component';
-/** cookie service */ 
+/** cookie service */
 import {CookieService} from 'ngx-cookie-service';
 /** pipe */
 import { ArraypipePipe } from './../../pipes/arraypipe.pipe';
@@ -52,9 +52,19 @@ import { ComputePipe, ComputeSalesPipe, ComputeCollectionPipe, ComputeSalePipe, 
 import { ChartsModule } from 'ng2-charts';
 import { ActivitylogsDirective } from './../../tellercomponents/directive/activitylogs.directive';
 import { NgxPrintModule } from 'ngx-print';
+
+/**
+ * LOAD CENTRAl
+ */
+ import { LoadcentralComponent } from "./../../api/loadcentral/loadcentral.component";
+ import { LcTransComponent } from "./../../api/loadcentral/shared/components/lc-trans/lc-trans.component";
+ import { LccompntTransComponent } from "./../../api/loadcentral/shared/components/lccompnt-trans/lccompnt-trans.component";
+ import { LclistTransComponent } from "./../../api/loadcentral/shared/components/lclist-trans/lclist-trans.component";
+ import { FilterPipe } from "./../../api/loadcentral/shared/pipe/filter.pipe";
+
 @NgModule({
 	declarations: [
-		
+
 		BarkotaComponent,
 		TellermainComponent,
 		TellerservicesComponent,
@@ -70,7 +80,12 @@ import { NgxPrintModule } from 'ngx-print';
 		ComputeIncomePipe,
 		SearchByDatePipe,
 		ActivitylogsDirective,
-		TellersettingsComponent
+		TellersettingsComponent,
+		LoadcentralComponent,
+		LcTransComponent,
+		LccompntTransComponent,
+		LclistTransComponent,
+		FilterPipe
 	],
 	imports: [
 		CommonModule,
@@ -103,7 +118,7 @@ import { NgxPrintModule } from 'ngx-print';
 		MatTooltipModule,
 		MatStepperModule,
 		MatChipsModule,
-		MatButtonToggleModule,	
+		MatButtonToggleModule,
 		MatDatepickerModule,
 		MatCheckboxModule,
 		MatRadioModule,
@@ -115,7 +130,7 @@ import { NgxPrintModule } from 'ngx-print';
 		CookieService,
 		SearchByDatePipe
 	],
-	 
-		
+
+
 })
 export class TellerModule { }
